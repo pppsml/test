@@ -1,0 +1,79 @@
+.dialog-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #777;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  max-height: 500px;
+  max-width: 350px;
+}
+
+.dialog__header {
+  flex: 1 1 0;
+  display: flex;
+  background-color: #ddd;
+}
+
+.dialog__header-title-container {
+  flex: 2 1 0;
+  max-width: 65%;
+}
+
+.dialog__header-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dialog__header-subtitle {
+}
+
+.dialog__header-button {
+  flex: 1 1 0;
+  max-width: 35%;
+}
+
+.dialog__content {
+  display: flex;
+  align-items: stretch;
+
+  overflow: hidden;
+}
+
+.dialog__content-block {
+  overflow-y: auto;
+}
+
+.dialog__content-block_left {
+  width: 30%;
+  border-right: 1px solid #ccc;
+}
+
+.dialog__content-block_right {
+  width: 70%;
+}
+
+.dialog__footer {
+  flex: 1 1 0;
+  background-color: #ddd;
+  word-break: break-all;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  overflow-y: auto;
+}
